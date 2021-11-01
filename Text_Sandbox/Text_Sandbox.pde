@@ -5,21 +5,21 @@ PFont titleFont;
 color purple=#9F25CB, white=#FFFFFF;
 
 //Display Geometry
-size(600, 400); // fullScreen(), displayWidth, displayHeight
+ fullScreen(); //displayWidth, displayHeight;
 
 //Fonts from OS
 /*
 String[] fontList = PFont.list(); //To list all fonts available on system
 printArray(fontList); //For listing all possible fonts to choose, then createFont
 */
-titleFont = createFont ("Harrington", 55);
-//Tools / Create Font / Find Font / Do Not Press "OK", known bug
+titleFont = createFont ("Harrington", 15);
+//Tools / Create Font / Find Font / Do Not Press "OK", its a bug
 
 //Populate variables
-titleX = width*1/5;
-titleY = height*1/10;
-titleWidth = width*3/5;
-titleHeight = height*1/10;
+titleX = displayWidth*1/5;
+titleY = displayHeight*1/10;
+titleWidth = displayWidth*3/5;
+titleHeight = displayHeight*1/10;
 
 //Lay out text space and typographical Features
 //rect(titleX, titleY, titleWidth, titleHeight);
